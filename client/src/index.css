@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-slate-950: #020617;
+    --color-slate-900: #0f172a;
+    --color-slate-800: #1e293b;
+    --color-purple-600: #9333ea;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color-scheme: dark;
+    background-color: #020617;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+
+  /* Custom Sleek Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #020617;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+
+  /* Cross-browser Select & Option Popup Visibility */
+  select option {
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+}
+
+/* Glassmorphism Cards & Modals */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-modal {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Table Hover Effects */
+.table-row-hover {
+  transition: background-color 0.15s ease-in-out;
+}
+.table-row-hover:hover {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Smooth Glow Shadow Utilities */
+.purple-glow {
+  box-shadow: 0 0 20px -3px rgba(147, 51, 234, 0.3);
+}
+
+.emerald-glow {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.3);
+}
+
+.rose-glow {
+  box-shadow: 0 0 20px -3px rgba(244, 63, 94, 0.3);
+}
